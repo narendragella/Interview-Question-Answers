@@ -1,3 +1,94 @@
+✅ Your Final Profile (Now Locked)
+Based on everything you shared, I’m building this for:
+👤 Nagur – DevOps Engineer (3.2+ yrs)
+🎯 Target: 8–12 LPA
+🏗️ Environment: On-Prem + AWS
+🗣️ Language: English
+🏢 Companies: All (MNC + Product + Startup)
+📘 Now Starting: PART 1 – CORE FOUNDATION
+
+❓Q1: A server is slow. What will you check first?
+✅ Answer (Interview-Ready):
+“First, I check CPU, memory, disk, and load using top, free, df, and uptime.
+Then I identify which process is consuming resources.
+I check application and system logs for errors.
+If required, I analyze I/O using iostat.
+Based on findings, I either tune the app, restart services, or scale resources.”
+❓Q2: Production disk is full. Application stopped. What will you do?
+✅ Answer:
+“First, I check disk usage using df -h and du.
+I identify large files or logs.
+I rotate or delete unnecessary logs.
+If required, I move files to backup storage.
+Then I implement logrotate to avoid recurrence.”
+❓Q3: How do you investigate memory leak?
+✅ Answer:
+“I monitor memory using free, top, and vmstat.
+I identify processes with high RES memory.
+I check application heap usage and GC logs.
+If required, I take heap dump and share with dev team.
+Meanwhile, I apply temporary restart or scaling.”
+❓Q4: What is Load Average? How do you interpret it?
+✅ Answer:
+“Load average shows average number of runnable or waiting processes in 1, 5, and 15 minutes.
+If load is higher than CPU cores, system is overloaded.
+I correlate load with CPU and I/O metrics.”
+✅ Your Task (Important)
+Before I continue Part 1, tell me honestly:
+👉 Do you want me to:
+1️⃣ Continue giving content here step-by-step
+2️⃣ Prepare silently and give you final big PDF directly
+Reply: 1 or 2
+1
+Excellent choice. 💯
+This is exactly how serious engineers prepare — step by step, understanding everything, not just memorizing.
+From now on, I’ll teach you like a mentor preparing you for 8–12 LPA interviews.
+We’ll go deep, practical, and interview-focused.
+📘 PART 1 – CORE FOUNDATION (Continued)
+🔹 SECTION 1: LINUX – ADVANCED PRODUCTION LEVEL
+❓Q5: A server suddenly rebooted. How will you investigate?
+✅ Interview-Ready Answer:
+“First, I check system logs in /var/log/messages or journalctl.
+I verify last reboot time using last reboot and uptime.
+I check dmesg for kernel panic or hardware errors.
+I look for OOM killer events.
+If it is due to power or VM issue, I coordinate with infra team.
+Then I prepare RCA and preventive actions.”
+❓Q6: Application is running, but users say it is slow. CPU is normal. What next?
+✅ Answer:
+“If CPU is normal, I check memory and disk I/O.
+I use iostat and vmstat to analyze wait time.
+I check network latency using ping and traceroute.
+I review application logs and DB connections.
+Many times slowness is due to I/O or DB bottleneck.”
+❓Q7: What is Zombie process? How do you handle it?
+✅ Answer:
+“A zombie process is a completed process whose entry remains in process table.
+It happens when parent doesn’t collect exit status.
+I identify it using ps aux | grep Z.
+Usually, restarting parent process clears it.
+If many zombies appear, I investigate application bug.”
+❓Q8: How do you analyze high disk I/O wait?
+✅ Answer:
+“I check %wa in top.
+Then I use iostat -x to see device latency.
+I find processes using iotop.
+I check for heavy log writes, DB dumps, backups.
+Then I optimize or schedule jobs off-peak.”
+❓Q9: What is OOM Killer?
+✅ Answer:
+“OOM Killer is triggered when system runs out of memory.
+Kernel kills high-memory processes to protect system.
+I check dmesg and logs to confirm.
+Then I tune application memory or add RAM/swap.”
+🔹 INTERVIEW TIP (Very Important)
+When answering Linux questions:
+Always follow this pattern:
+👉 Check → Analyze → Fix → Prevent
+Example:
+“I check logs → analyze metrics → fix root cause → add monitoring/prevention.”
+Interviewers love this. 💯
+
 📘 Let’s Start — Linux (More in Same Format)
 ❓Q10: How do you troubleshoot high CPU usage?
 ✅ Answer:
